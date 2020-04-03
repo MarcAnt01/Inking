@@ -14,7 +14,16 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-                
+        
+        <StackPanel x:Name="ToolPanel" Orientation="Horizontal" Grid.Row="1">
+            <InkToolbar x:Name="inkToolbar" 
+                        VerticalAlignment="Top" 
+                        Margin="10,0,10,0"
+                        TargetInkCanvas="{x:Bind inkCanvas}">
+            </InkToolbar>
+        </StackPanel>
+
+
         <Grid x:Name="drawingCanvas" Grid.Row="2">           
             <InkCanvas x:Name="inkCanvas" />
         </Grid>
