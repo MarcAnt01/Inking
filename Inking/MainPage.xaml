@@ -24,12 +24,14 @@
             <Button x:Name="buttonSave"
             FontFamily="{StaticResource SymbolThemeFontFamily}"        
             Content="&#xE74E;" 
+            ToolTipService.ToolTip="Save"
             Click="buttonSave_ClickAsync"
             Width="35"
             Margin="5,0,0,0"/>
     <Button x:Name="buttonLoad" 
             FontFamily="{StaticResource SymbolThemeFontFamily}"        
-            Content="&#xE710;"   
+            Content="&#xE710;" 
+            ToolTipService.ToolTip="Load"
             Click="buttonLoad_ClickAsync"
             Width="35"
             Margin="5,0,0,0"/>
