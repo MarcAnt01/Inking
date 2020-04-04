@@ -21,6 +21,18 @@
                         Margin="10,0,10,0"
                         TargetInkCanvas="{x:Bind inkCanvas}">
             </InkToolbar>
+            <Button x:Name="buttonSave"
+            FontFamily="{StaticResource SymbolThemeFontFamily}"        
+            Content="&#xE74E;" 
+            Click="buttonSave_ClickAsync"
+            Width="35"
+            Margin="5,0,0,0"/>
+    <Button x:Name="buttonLoad" 
+            FontFamily="{StaticResource SymbolThemeFontFamily}"        
+            Content="&#xE710;"   
+            Click="buttonLoad_ClickAsync"
+            Width="35"
+            Margin="5,0,0,0"/>
         </StackPanel>
 
 
