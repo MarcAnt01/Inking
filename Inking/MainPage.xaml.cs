@@ -16,6 +16,7 @@ using Windows.UI.Input.Inking;
 using Windows.UI.Input.Inking.Analysis;
 using Windows.UI.Xaml.Shapes;
 using Windows.Storage.Streams;
+using Windows.UI.ViewManagement;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -29,9 +30,14 @@ namespace Inking
         public MainPage()
         {
             this.InitializeComponent();
+            // adjust titlebar colors
+            var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+            titleBar.BackgroundColor = Windows.UI.Colors.White;
+            titleBar.ButtonBackgroundColor = Windows.UI.Colors.White;
+            titleBar.ButtonHoverBackgroundColor = Windows.UI.Colors.Gray;
         }
 
-        // Begin "Step 7: Save and load ink"
+      
         private async void buttonSave_ClickAsync(object sender, RoutedEventArgs e)
         {
         //    // Get all strokes on the InkCanvas.
