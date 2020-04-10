@@ -83,16 +83,9 @@ namespace Inking
                     {
                         // File saved.
                     }
-                    else
-                    {
-                        // File couldn't be saved.
-                    }
+                   
                 }
-                // User selects Cancel and picker returns null.
-                else
-                {
-                    // Operation cancelled.
-                }
+                
             }
         }
 
@@ -117,13 +110,8 @@ namespace Inking
                     await inkCanvas.InkPresenter.StrokeContainer.LoadAsync(inputStream);
                 }
                 stream.Dispose();
-            }
-            // User selects Cancel and picker returns null.
-            else
-            {
-                // Operation cancelled.
-            }
-        }
-        // End "Step 7: Save and load ink"
+            }      
+            
+        }        
     }
 }
